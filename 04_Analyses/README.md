@@ -6,16 +6,16 @@
 3. `04_NPStat_20220824` - NPStat
 4. Stuff in R...
 - Need to run `After LD-pruning...` code below (for import into R)
-4i. `04_R_PCA_DAPC_20220730` - DAPC analyses
-4ii. `04_R_IBD_20220907` - isolation by distance
-4iii. `04_R_poolfstat_20220907` - poolfstat
+  - 4i. `04_R_PCA_DAPC_20220730` - DAPC analyses
+  - 4ii. `04_R_IBD_20220907` - isolation by distance
+  - 4iii. `04_R_poolfstat_20220907` - poolfstat
 
 
 ---
 
 ## After LD-pruning...
 ### need to select LD-pruned sites and gzip files for import into R
-### These are 10X (ld02, ld05) and 15X (ld01, ld02, ld05)
+### These are 15X (ld01)
 
 #### *A. ischyros* first
 ```
