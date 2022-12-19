@@ -1,6 +1,6 @@
 These scripts use aTRAM to retrieve COI from the 30 CERW samples and 30 PROW samples (from SNP/pop gen project)
 
-COI reference is amino acid translated COI from Proctophyllodes miliariae
+COI reference is amino acid translated COI from *Proctophyllodes miliariae*
 
 ```01_aTRAM_COI_20211001.slurm``` is the first attempt to retrieve COI from the 60 SNP samples. Something went wrong with the exonerate pipeline for every other sample (strangely). So the ```01_aTRAM_COI_20211001_v2.slurm``` is the same slurm with different input file (only includes the 30 samples that did not get properly exonerated), and only the "stitcher"/exonerate pipeline is active (all else is commented out to hopefully save time...)
 
