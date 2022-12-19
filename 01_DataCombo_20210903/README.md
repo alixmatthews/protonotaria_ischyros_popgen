@@ -8,7 +8,6 @@ Date: 20210903
 
 ## Description of what you're doing and why
 - Combining previous data (from 20210412_snp) with new data so they are all in the same directory
-- I don't necessarily have to do this (because I already have g.vcf files that I can just combine at that particular step from my previous work with those samples), but I think for my peace of mind (and since I don't have that many samples), I should start over with these samples... [note: 13 June 2022; this is good I did this since I dropped the g.vcf stuff!]
 
 ## Code used to do so
 
