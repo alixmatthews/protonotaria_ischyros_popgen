@@ -1,6 +1,7 @@
 ### Isolation by distance
 ### Alix Matthews
 ### 2022 Sept 7
+### updated 2023 March 8
 
 ## Running only on ld01, dp15 datasets
 
@@ -10,7 +11,7 @@
 
 
 #### Set working directory and load libraries ####
-setwd("~/Desktop/Alix/snp_20220730/20220907_IBD/")
+setwd("~/Desktop/Alix/snp_20220730/04_R_IBD_20220907/")
 
 library(ade4) # 1.7-19
 library(reshape2) # 1.4.4
@@ -154,9 +155,10 @@ cerw_ibd_plot <-
   ylab("Fst/(1-Fst)") +
   theme_classic() +
   xlim(-1,1500) +
+  ylim(0.0, 0.25) +
   theme(axis.title = element_text(size = 16)) +
   theme(axis.text = element_text(size=16)) +
-  annotate("text", x=1100, y = 0.18, label = "paste(italic(R)^2, \" = 0.15, p = 0.038\")", size = 6, col = "cadetblue4", parse = TRUE)
+  annotate("text", x=1100, y = 0.23, label = "paste(italic(R)^2, \" = 0.15, p = 0.038\")", size = 6, col = "cadetblue4", parse = TRUE)
 
 cerw_ibd_plot
 
@@ -318,9 +320,10 @@ prow_ibd_plot <-
   ylab("Fst/(1-Fst)") +
   theme_classic() +
   xlim(-1,1500) +
+  ylim(0.0,0.25) +
   theme(axis.title = element_text(size = 16)) +
   theme(axis.text = element_text(size=16)) +
-  annotate("text", x=1100, y = 0.24, label = "paste(italic(R)^2, \" = -0.12, p = 0.978\")", size = 6, col = "darkgoldenrod4", parse = TRUE)
+  annotate("text", x=1100, y = 0.23, label = "paste(italic(R)^2, \" = -0.12, p = 0.978\")", size = 6, col = "darkgoldenrod4", parse = TRUE)
 
 
 prow_ibd_plot
@@ -337,7 +340,7 @@ prow_ibd_plot
 
 
 
-#### put figures together ####
+#### put figures together, if you want. I remade these in InkScape ####
 
 
 pdf("CERW_PROW_IBD.pdf", width=7, height=14)
